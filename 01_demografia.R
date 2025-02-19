@@ -89,7 +89,6 @@ d2$`2024` = c(NA, 5, 20, 24, 27, 26, 21, 23, 22, 3, 17, 18, 11, 10, 9, 6, 4, 5, 
 
 
 
-
 # Criar um novo arquivo Excel
 wb <- createWorkbook()
 # Criar lista de bases de dados
@@ -111,146 +110,133 @@ d1$tematica <- "Demografia"
 d1$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
 d1$categoria1 <- "Total"
 d1$categoria2 <- "-"
+d1$`2023` <- c(211695158, 18535113, 1740255, 876582, 4240571, 695270, 8616120, 799124, 1567191, 
+           56970423, 7003234, 3365881, 9196672, 3436278, 4124468, 9514483, 3218607, 2281994, 
+           14828806, 88387852, 21247401, 4076068, 17213813, 45850570, 30903366, 11753862, 
+           7927212, 11222292, 16898404, 2878009, 3778389, 7274463, 2967543) 
+
 
 d2 <- bases
 d2$tematica <- "Demografia"
 d2$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
 d2$categoria1 <- "Ranking "
 d2$categoria2 <- "-"
+d2$`2023` <- c(NA, 4, 23, 25, 13, 27, 9, 26, 24, 2, 12, 18, 8, 17, 14, 7, 19, 22, 4, 1, 
+                  2, 15, 3, 1, 3, 5, 10, 6, 5, 21, 16, 11, 20)
 
 d3 <- bases
 d3$tematica <- "Demografia"
 d3$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
 d3$categoria1 <- "0 a 4 anos"
 d3$categoria2 <- "-"
+d3$`2023` <- c(13421242, 1489614, 125954, 74874, 372015, 71276, 655615, 72115, 117765, 
+               3762280, 520916, 222451, 602199, 214008, 273021, 625091, 235513, 151763, 
+               917318, 5141414, 1220755, 266281, 958493, 2695885, 1865211, 729604, 504102, 
+               631505, 1162723, 210411, 294993, 468790, 188529)
+
 
 d4 <- bases
 d4$tematica <- "Demografia"
 d4$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
 d4$categoria1 <- "5 a 9 anos"
 d4$categoria2 <- "-"
+d4$`2023` <- c(14589745, 1560194, 132328, 77678, 392192, 67205, 692423, 75213, 123155, 
+               4043311, 554149, 233603, 643840, 233897, 288266, 679123, 242865, 165043, 
+               1002525, 5727296, 1314435, 280280, 1104521, 3028060, 2027087, 800697, 
+               524343, 702047, 1231857, 223089, 295377, 508749, 204642) 
 
 d5 <- bases
 d5$tematica <- "Demografia"
 d5$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
 d5$categoria1 <- "10 a 14 anos"
 d5$categoria2 <- "-"
+d5$`2023` <- c(14515508, 1572129, 133776, 78189, 389084, 62094, 715008, 71835, 122143, 
+                 4165609, 591098, 242561, 645856, 239849, 295180, 697478, 250831, 168693, 
+                 1034063, 5649525, 1314332, 272178, 1062671, 3000344, 1947317, 778498, 
+                 497960, 670859, 1180928, 215472, 276694, 491520, 197242)
+
 
 d6 <- bases
 d6$tematica <- "Demografia"
 d6$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
 d6$categoria1 <- "15 a 19 anos"
 d6$categoria2 <- "-"
+d6$`2023` <- c(15169410, 1644083, 136218, 85160, 386961, 60932, 777258, 72329, 125225, 
+                 4416907, 635544, 267357, 684837, 251611, 313251, 732710, 257900, 176640, 
+                 1097057, 5855307, 1428101, 281132, 1086141, 3059933, 2019965, 810771, 
+                 499345, 709849, 1233148, 215078, 282242, 522555, 213273)
 
 d7 <- bases
 d7$tematica <- "Demografia"
 d7$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
 d7$categoria1 <- "20 a 29 anos"
 d7$categoria2 <- "-"
-
-d8 <- bases
-d8$tematica <- "Demografia"
-d8$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d8$categoria1 <- "30 a 39 anos"
-d8$categoria2 <- "-"
-
-d9 <- bases
-d9$tematica <- "Demografia"
-d9$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d9$categoria1 <- "40 a 49 anos"
-d9$categoria2 <- "-"
-
-d10 <- bases
-d10$tematica <- "Demografia"
-d10$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d10$categoria1 <- "50 a 59 anos"
-d10$categoria2 <- "-"
-
-d11 <- bases
-d11$tematica <- "Demografia"
-d11$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d11$categoria1 <- "60 a 69 anos"
-d11$categoria2 <- "-"
-
-d12 <- bases
-d12$tematica <- "Demografia"
-d12$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d12$categoria1 <- "70 a 79 anos"
-d12$categoria2 <- "-"
-
-d13 <- bases
-d13$tematica <- "Demografia"
-d13$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d13$categoria1 <- "80 anos e mais"
-d13$categoria2 <- "-"
-
-
-# Criando vetores para cada coluna
-
-d1$`2023` <- c(211695158, 18535113, 1740255, 876582, 4240571, 695270, 8616120, 799124, 1567191, 
-           56970423, 7003234, 3365881, 9196672, 3436278, 4124468, 9514483, 3218607, 2281994, 
-           14828806, 88387852, 21247401, 4076068, 17213813, 45850570, 30903366, 11753862, 
-           7927212, 11222292, 16898404, 2878009, 3778389, 7274463, 2967543)
-
-d2$`2023` <- c(NA, 4, 23, 25, 13, 27, 9, 26, 24, 2, 12, 18, 8, 17, 14, 7, 19, 22, 4, 1, 
-                  2, 15, 3, 1, 3, 5, 10, 6, 5, 21, 16, 11, 20)
-
-d3$`2023` <- c(13421242, 1489614, 125954, 74874, 372015, 71276, 655615, 72115, 117765, 
-               3762280, 520916, 222451, 602199, 214008, 273021, 625091, 235513, 151763, 
-               917318, 5141414, 1220755, 266281, 958493, 2695885, 1865211, 729604, 504102, 
-               631505, 1162723, 210411, 294993, 468790, 188529)
-
-d4$`2023` <- c(14589745, 1560194, 132328, 77678, 392192, 67205, 692423, 75213, 123155, 
-               4043311, 554149, 233603, 643840, 233897, 288266, 679123, 242865, 165043, 
-               1002525, 5727296, 1314435, 280280, 1104521, 3028060, 2027087, 800697, 
-               524343, 702047, 1231857, 223089, 295377, 508749, 204642)
-
-d5$`2023` <- c(14515508, 1572129, 133776, 78189, 389084, 62094, 715008, 71835, 122143, 
-                 4165609, 591098, 242561, 645856, 239849, 295180, 697478, 250831, 168693, 
-                 1034063, 5649525, 1314332, 272178, 1062671, 3000344, 1947317, 778498, 
-                 497960, 670859, 1180928, 215472, 276694, 491520, 197242)
-
-d6$`2023` <- c(15169410, 1644083, 136218, 85160, 386961, 60932, 777258, 72329, 125225, 
-                 4416907, 635544, 267357, 684837, 251611, 313251, 732710, 257900, 176640, 
-                 1097057, 5855307, 1428101, 281132, 1086141, 3059933, 2019965, 810771, 
-                 499345, 709849, 1233148, 215078, 282242, 522555, 213273)
-
 d7$`2023` <- c(32576988, 3227220, 282650, 160340, 755588, 125300, 1503683, 145136, 
                  254523, 9017667, 1168515, 526101, 1493427, 533505, 634680, 1493592, 
                  523567, 366327, 2277953, 13031364, 3191433, 600934, 2550335, 6688662, 
                  4615648, 1782100, 1221871, 1611677, 2685089, 446208, 608940, 1157999, 
                  471942)
 
+d8 <- bases
+d8$tematica <- "Demografia"
+d8$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d8$categoria1 <- "30 a 39 anos"
+d8$categoria2 <- "-"
 d8$`2023` <- c(32893858, 2912922, 277425, 131873, 651675, 110389, 1370033, 125320, 
                  246207, 8954501, 1103639, 524028, 1494141, 554819, 635296, 1464871, 
                  487736, 363123, 2326848, 13568591, 3261147, 632400, 2565412, 7109632, 
                  4750495, 1769744, 1326454, 1654297, 2707349, 442318, 614204, 1169132, 
-                 481695)
+                 481695) 
 
+d9 <- bases
+d9$tematica <- "Demografia"
+d9$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d9$categoria1 <- "40 a 49 anos"
+d9$categoria2 <- "-"
 d9$`2023` <- c(30910229, 2498990, 251492, 113013, 552976, 86590, 1170477, 103121, 
                  221321, 8176061, 927058, 476290, 1277326, 494690, 586038, 1373950, 
                  451312, 331314, 2258083, 13287317, 3136416, 609155, 2563052, 6978694, 
                  4415914, 1678460, 1161828, 1575626, 2531947, 401546, 547664, 1100043, 
                  482694)
 
+d10 <- bases
+d10$tematica <- "Demografia"
+d10$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d10$categoria1 <- "50 a 59 anos"
+d10$categoria2 <- "-"
 d10$`2023` <- c(24636687, 1721934, 191579, 74516, 361554, 56050, 808484, 68464, 
                  161287, 6260526, 657100, 367466, 1018096, 398741, 466048, 1068789, 
                  346606, 255493, 1682187, 10885393, 2614508, 479609, 2164129, 5627147, 
                  3840960, 1468252, 952546, 1420162, 1927874, 321217, 410299, 851055, 
                  345303)
 
+d11 <- bases
+d11$tematica <- "Demografia"
+d11$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d11$categoria1 <- "60 a 69 anos"
+d11$categoria2 <- "-"
 d11$`2023` <- c(18291312, 1115032, 125860, 46948, 227800, 34163, 532167, 39884, 
                  108210, 4391822, 459886, 266824, 703339, 276164, 327086, 748934, 
                  236034, 168893, 1204662, 8455026, 2061803, 372988, 1744819, 4275416, 
                  3033679, 1090058, 716334, 1227287, 1295753, 230540, 268022, 579282, 
-                 217909)
+                 217909) 
 
+d12 <- bases
+d12$tematica <- "Demografia"
+d12$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d12$categoria1 <- "70 a 79 anos"
+d12$categoria2 <- "-"
 d12$`2023` <- c(10117249, 557837, 59503, 23973, 107114, 15700, 273703, 18202, 
                  59642, 2540180, 264280, 159648, 417153, 157728, 200088, 428079, 
                  131344, 92703, 689157, 4673899, 1154592, 193148, 976878, 2349281, 
                  1681594, 597279, 374282, 710033, 663739, 120099, 129520, 299260, 
                  114860)
 
+d13 <- bases
+d13$tematica <- "Demografia"
+d13$indicador <- "População por Faixa Etária, Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d13$categoria1 <- "80 anos e mais"
+d13$categoria2 <- "-"
 d13$`2023` <- c(4572930, 235158, 23470, 10018, 43612, 5571, 117269, 7505, 
                    27713, 1241559, 121049, 79552, 216458, 81266, 105514, 201866, 
                    54899, 42002, 338953, 2112720, 549879, 87963, 437362, 1037516, 
@@ -291,27 +277,8 @@ d1$categoria1 <- "Número de Eleitores"
 d1$categoria2 <- "-"
 d1 <- rbind(d1,linha_extra)
 
-d2 <- bases
-linha_extra <- tibble::tibble(
-  tematica = "Demografia",
-  subtematica = "-",
-  indicador = "Número de Eleitores, Segundo Brasil, Grandes Regiões e Unidades da Federação",
-  regiao = "-",
-  localidade = "Exterior",
-  categoria1 = "Ranking",
-  categoria2 = "-"
-)
-d2$tematica <- "Demografia"
-d2$indicador <- "Número de Eleitores, Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d2$categoria1 <- "Ranking"
-d2$categoria2 <- "-"
-d2 <- rbind(d2,linha_extra)
-
-
 # Criando vetores para cada coluna
-
-# Criando vetores para cada coluna
-
+# Vetor com o número de eleitores para os anos de 2020 a 2024
 d1$`2020` <- c(145958233, 11488004, 1156175, 548013, 2442675, 342297, 5450710, 516027, 1032107, 
             39238502, 4552310, 2451974, 6206078, 2439327, 2960294, 6711341, 2212605, 1604212, 
             10100361, 62505545, 15768482, 2767545, 12394670, 31574848, 21502285, 7988648, 
@@ -337,6 +304,24 @@ d1$`2024` <- c(155912680, 12987166, 1266546, 612448, 2749346, 389863, 6226373, 5
             11283507, 66906335, 16469155, 2999642, 13033929, 34403609, 22969108, 8645891, 
             5640659, 8682558, 9747379, 2032487, 2588457, 5126435, NA, NA)
 
+
+d2 <- bases
+linha_extra <- tibble::tibble(
+  tematica = "Demografia",
+  subtematica = "-",
+  indicador = "Número de Eleitores, Segundo Brasil, Grandes Regiões e Unidades da Federação",
+  regiao = "-",
+  localidade = "Exterior",
+  categoria1 = "Ranking",
+  categoria2 = "-"
+)
+d2$tematica <- "Demografia"
+d2$indicador <- "Número de Eleitores, Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d2$categoria1 <- "Ranking"
+d2$categoria2 <- "-"
+d2 <- rbind(d2,linha_extra)
+
+# Vetor com o ranking de 2024
 d2$`2024` <- c(NA, 4, 22, 24, 15, 26, 9, 25, 23, 2, 
                     11, 16, 8, 17, 13, 7, 19, 21, 4, 1, 
                     2, 14, 3, 1, 3, 6, 10, 5, 5, 20, 
@@ -365,15 +350,7 @@ d1$indicador <- "Expectativa de Vida ao Nascer (em anos), Segundo Brasil, Grande
 d1$categoria1 <- "Expectativa de Vida ao Nascer (em anos)"
 d1$categoria2 <- "-"
 
-d2 <- bases
-d2$tematica <- "Demografia"
-d2$indicador <- "Expectativa de Vida ao Nascer (em anos), Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d2$categoria1 <- "Ranking "
-d2$categoria2 <- "-"
-
-
 # Criando vetores para cada coluna
-
 d1$`2019` <- c(76.22, 75.63, 76.57, 74.83, 75.34, 74.12, 75.69, 73.95, 76.70, 75.84, 
             75.97, 76.71, 76.78, 76.24, 76.20, 75.17, 74.39, 75.49, 75.63, 76.42, 
             77.16, 77.09, 74.49, 76.81, 76.82, 76.63, 77.83, 76.43, 76.51, 76.05, 
@@ -399,6 +376,14 @@ d1$`2023` <- c(76.39, 75.67, 75.77, 75.63, 75.24, 74.09, 76.04, 73.76, 76.47, 75
             77.33, 76.99, 75.39, 76.82, 77.12, 76.64, 78.10, 76.97, 76.55, 75.14, 
             75.47, 76.57, 79.60)
 
+
+d2 <- bases
+d2$tematica <- "Demografia"
+d2$indicador <- "Expectativa de Vida ao Nascer (em anos), Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d2$categoria1 <- "Ranking "
+d2$categoria2 <- "-"
+
+# Vetor com o ranking de 2023
 d2$`2023` <- c(NA, 5, 16, 17, 23, 26, 15, 27, 13, 4, 
                     21, 9, 5, 3, 11, 22, 25, 14, 18, 2, 
                     4, 6, 20, 8, 1, 10, 2, 7, 3, 24, 
@@ -433,7 +418,6 @@ d2$categoria1 <- "Ranking "
 d2$categoria2 <- "-"
 
 # Criando vetores para cada coluna
-
 d1$`2019` <- c(1.73, 2.04, 1.89, 2.20, 2.22, 2.80, 1.90, 2.28, 1.96, 1.75, 
             1.92, 1.77, 1.72, 1.67, 1.78, 1.75, 1.86, 1.72, 1.65, 1.63, 
             1.58, 1.77, 1.58, 1.66, 1.67, 1.73, 1.65, 1.62, 1.83, 2.00, 
@@ -487,15 +471,8 @@ d1$tematica <- "Demografia"
 d1$indicador <- "Razão de Dependência, Segundo Brasil, Grandes Regiões e Unidades da Federação"
 d1$categoria1 <- "Razão de Dependência"
 d1$categoria2 <- "-"
-
-d2 <- bases
-d2$tematica <- "Demografia"
-d2$indicador <- "Razão de Dependência, Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d2$categoria1 <- "Ranking"
-d2$categoria2 <- "-"
-
-# Criando vetores para cada coluna
-
+ 
+ #Criando vetores para cada coluna
 d1$`2019` <- c(44.44, 48.98, 43.72, 52.13, 52.08, 52.48, 48.16, 50.95, 47.45, 46.19, 
             51.12, 47.04, 45.45, 44.45, 47.34, 46.18, 47.17, 44.63, 44.36, 43.16, 
             42.71, 43.42, 43.49, 43.21, 43.28, 43.76, 40.47, 44.70, 42.71, 46.65, 
@@ -521,6 +498,14 @@ d1$`2023` <- c(44.62, 46.66, 43.59, 48.18, 49.36, 51.48, 45.31, 48.71, 46.53, 44
             43.86, 45.08, 44.83, 44.06, 44.91, 44.80, 42.42, 46.83, 42.95, 47.12, 
             44.37, 41.84, 40.02)
 
+
+d2 <- bases
+d2$tematica <- "Demografia"
+d2$indicador <- "Razão de Dependência, Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d2$categoria1 <- "Ranking"
+d2$categoria2 <- "-"
+
+#Vetor com o ranking de 2023
 d2$`2023` <- c(NA, 1, 24, 4, 2, 1, 12, 3, 8, 2, 
                     5, 11, 17, 22, 10, 13, 9, 23, 21, 4, 
                     20, 14, 15, 19, 3, 16, 25, 7, 5, 6, 
@@ -548,14 +533,7 @@ d1$indicador <- "Índice de Envelhecimento, Segundo Brasil, Grandes Regiões e U
 d1$categoria1 <- "Índice de Envelhecimento"
 d1$categoria2 <- "-"
 
-d2 <- bases
-d2$tematica <- "Demografia"
-d2$indicador <- "Índice de Envelhecimento, Segundo Brasil, Grandes Regiões e Unidades da Federação"
-d2$categoria1 <- "Ranking"
-d2$categoria2 <- "-"
-
 # Criando vetores para cada coluna
-
 d1$`2019` <- c(44.97, 22.48, 28.08, 18.90, 17.80, 15.25, 24.20, 15.66, 31.18, 40.10, 
             29.15, 42.63, 42.88, 43.78, 45.86, 40.56, 33.13, 35.07, 43.84, 53.62, 
             56.63, 45.39, 59.90, 50.79, 54.65, 48.50, 47.66, 66.48, 35.25, 36.22, 
@@ -581,6 +559,13 @@ d1$`2023` <- c(53.60, 27.59, 34.75, 23.52, 21.51, 17.80, 30.23, 19.43, 37.06, 47
             68.27, 54.70, 70.48, 60.74, 64.00, 57.51, 54.70, 78.57, 41.99, 42.04, 
             33.93, 46.06, 43.66)
 
+d2 <- bases
+d2$tematica <- "Demografia"
+d2$indicador <- "Índice de Envelhecimento, Segundo Brasil, Grandes Regiões e Unidades da Federação"
+d2$categoria1 <- "Ranking"
+d2$categoria2 <- "-"
+
+#Vetor com o ranking 2023
 d2$`2023` <- c(NA, 5, 21, 24, 25, 27, 23, 26, 19, 3, 
                     20, 11, 12, 10, 9, 13, 18, 16, 8, 1, 
                     3, 6, 2, 4, 2, 5, 7, 1, 4, 17, 
@@ -599,4 +584,4 @@ for (nome in names(dados_lista)) {
   setColWidths(wb, sheet = nome, cols = 1:ncol(dados_lista[[nome]]), widths = "auto")
 }
 # Salvar o arquivo Excel
-saveWorkbook(wb, "Demografia/07 - Razão de Dependência.xlsx", overwrite = TRUE)
+saveWorkbook(wb, "Demografia/08 - Índice de Envelhecimento.xlsx", overwrite = TRUE)
