@@ -585,3 +585,5 @@ for (nome in names(dados_lista)) {
 }
 # Salvar o arquivo Excel
 saveWorkbook(wb, "Demografia/08 - Índice de Envelhecimento.xlsx", overwrite = TRUE)
+
+#Valendo Sandy
