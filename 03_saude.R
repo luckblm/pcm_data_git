@@ -148,6 +148,8 @@ d1$indicador <- "Taxa de Mortalidade Materna"
 d1$categoria1 <- "Taxa"
 d1$categoria2 <- "-"
 
+
+
 d2 <- bases
 d2$tematica <- "Saúde"
 d2$indicador <- "Taxa de Mortalidade Materna"
