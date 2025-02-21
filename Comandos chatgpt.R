@@ -76,4 +76,4 @@ Municipal em d$4`ano`
 Privada em d5$"ano"
 Ranking 2023 em d6$`2023`
 
-trazendo o conjunto de dados de cada vetor correspondente, sem pular e alterar quaisquer dados.
+Importante: Incluia todo o conjunto de dados de cada vetor correspondente, sem pular e alterar quaisquer dados.
