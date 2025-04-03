@@ -12,6 +12,7 @@ e os anos devem ser escritos entre crases (``)."
 Dessa forma, o pedido fica claro e direto, sem margem para interpretação errada.
 
 
+<<<<<<< HEAD
 "Extraia os valores da tabela e crie vetores em R com as 
  para os anos
 armazenados dentro de d1$. Além disso, crie um vetor para o ranking,
@@ -23,16 +24,24 @@ e os anos devem ser escritos entre crases (`)."
 
   
 ### Prompt contextualizado
+=======
+########  Prompt contextualizado #########
+## Parte 1
+>>>>>>> b3d3fa515e19c6a55b21022c03928845398d2007
 
-Agora Crie a mesma estrutura para número de matrículas na pré escola - ensino regular por dependência administrativa.
+Crie uma estrutura de vetores em R para  o número de matrículas na {Coloque o nome do indicador/Tabela}  - ensino regular por dependência administrativa, de acordo com as instruções a seguir:
 
-Crie os vetores em R para as colunas de dados, Total, Federal, Estadual, Municipal e Privada, para cada um dos anos, 2019, 2020, 2021, 2022 e 2023, estruturados de forma organizada e com os valores dos anos entre `. 
-Em cada vetor, os valores devem corresponder aos dados de cada ano, sem modificar os dados originais, incluindo os valores que contêm "-", mantenha como está e não substitua-os por zero. 
-
+Pedido:
+Crie os vetores em R para as colunas de dados, Total, Federal, Estadual, Municipal e Privada, para cada um dos anos, 2019, 2020, 2021, 2022 e 2023, estruturados de forma organizada e com os valores dos anos entre ``. 
 Acrescente ainda um vetor com o ranking de 2023, de acordo com a coluna correspondente, mantendo apenas os números, sem caracteres especiais. 
 
-Os dados devem estar estruturados como elucidado no modelo, a baixo:
-`
+Regras:
+Em cada vetor, os valores devem corresponder aos dados de cada ano, sem modificar os dados originais, incluindo os valores que contêm "-".  
+Não pule nenhum valor, incluindo os valores que contêm "-", mantenha-os como estão originalmente e não substitua o "-" por zero (0).
+
+Os dados devem estar estruturados como elucidado no modelo (apenas exemplo da estrutura, não use esses dados), a baixo:
+
+```
 # 2023
 total_`2023` <- c(1282369, 133559, 4810, 5152, 4576, 7042, 78679, 3989, 58552, 10524, 91654, 39142, 56142, 48557, 23567, 14723, 25876, 38069, 130454, 62782, 296135, 49873, 114261, 141275, 122763, 270113, 323126)
 federal_`2023` <- c(813, "-", "-", "-", "-", "-", "-", "-", "-", "-", 115, "-", "-", 12, 52, 49, 34, 23, 39, 38, 128, "-", 3, 42, 31, "-", 10)
@@ -40,49 +49,45 @@ estadual_`2023` <- c(2610, 114, "-", "-", "-", "-", "-", "-", 58, "-", 1100, "-"
 municipal_`2023` <- c(454590, 129438, 1983, 2945, 8763, 6230, 76467, 3402, 26182, 12729, 53010, 12248, 51557, 33419, 15798, 38857, 88791, 70129, 179389, 77577, 142321, 86089, 73749, 51983, 155429, 20714, 184607)
 privada_`2023` <- c(802876, 7598, 2778, 307, 1313, 1412, 77194, 3987, 26757, 10926, 87329, 24134, 46085, 23357, 10675, 20083, 19973, 8882, 10814, 32531, 56177, 31845, 36201, 47578, 7633, 75523, 46147)
 ranking_`2023` <- c("-", 5, 24, 25, 20, 26, 11, 27, 23, 2, 9, 17, 8, 19, 15, 10, 16, 22, 5, 1, 2, 14, 3, 1, 3, 4, 7, 6, 4, 18, 13, 12, 21)
+````
 
-
-e devem ser agrupados corretamente em cada um dos anos indicados na tabela 2019, 2020, 2021, 2022 e 2023, nesta ordem, substituindo com os dados do conjunto de indicado  entre {}:
+e devem ser agrupados corretamente em cada um dos anos indicados na tabela 2019, 2020, 2021, 2022 e 2023, nesta ordem, substituindo com os dados do conjunto de indicado  entre {}, sem pular ou modificar quais quer valores, como instruído anteriormente.
 
 Conjunto de dados:
 
 {
-2019	2020	2021	2022	2023	
-Total	Federal	Estadual	Municipal	Privada	Total	Federal	Estadual	Municipal	Privada	Total	Federal	Estadual	Municipal	Privada	Total	Federal	Estadual	Municipal	Privada	Total	Ranking 2023	Federal	Estadual	Municipal	Privada	
-BRASIL	5.217.686	1.519	55.206	3.953.633	1.207.328	5.177.806	1.399	55.467	4.000.709	1.120.231	4.902.189	1.285	52.986	3.949.829	898.089	5.093.075	1.415	53.642	3.960.069	1.077.949	5.338.282	-	1.525	56.192	4.112.950	1.167.615	
-Região Norte	512.633	94	810	451.441	60.288	510.412	73	800	453.622	55.917	487.040	48	857	441.481	44.654	504.262	85	968	447.791	55.418	539.499	4°	93	1.057	479.291	59.058	
-Rondônia	35.782	-	60	29.919	5.803	38.184	-	27	32.903	5.254	38.097	-	-	33.954	4.143	41.719	-	-	36.060	5.659	45.748	24°	-	-	39.914	5.834	
-Acre	27.326	25	279	25.730	1.292	26.827	25	278	25.421	1.103	24.850	21	276	23.610	943	24.881	21	285	23.253	1.322	26.989	25°	25	373	25.212	1.379	
-Amazonas	125.758	-	6	112.687	13.065	124.818	-	13	112.184	12.621	117.950	-	8	108.214	9.728	120.914	-	5	108.838	12.071	127.415	13°	-	10	114.618	12.787	
-Roraima	21.103	-	-	19.038	2.065	20.931	-	-	19.095	1.836	20.327	-	-	18.898	1.429	20.929	-	-	19.162	1.767	23.358	26°	-	-	21.131	2.227	
-Pará	239.819	69	59	210.376	29.315	236.752	48	60	209.697	26.947	225.996	27	58	203.117	22.794	232.472	64	183	204.955	27.270	246.717	8°	68	246	217.806	28.597	
-Amapá	22.349	-	337	19.405	2.607	21.993	-	370	19.082	2.541	19.875	-	453	17.822	1.600	20.597	-	424	17.941	2.232	22.433	27°	-	341	19.662	2.430	
-Tocantins	40.496	-	69	34.286	6.141	40.907	-	52	35.240	5.615	39.945	-	62	35.866	4.017	42.750	-	71	37.582	5.097	46.839	23°	-	87	40.948	5.804	
-Região Nordeste	1.473.035	249	3.929	1.074.691	394.166	1.445.175	268	3.770	1.085.614	355.523	1.359.506	254	3.845	1.088.562	266.845	1.417.424	214	3.711	1.074.600	338.899	1.493.682	2°	254	4.030	1.120.477	368.921	
-Maranhão	225.507	-	-	181.788	43.719	218.353	-	-	176.730	41.623	209.723	-	-	170.481	39.242	211.618	-	51	169.224	42.343	222.531	10°	-	30	176.980	45.521	
-Piauí	93.448	-	-	77.153	16.295	92.771	-	-	78.772	13.999	89.822	-	-	78.416	11.406	89.732	-	-	75.976	13.756	94.139	17°	-	-	79.012	15.127	
-Ceará	239.464	27	756	176.175	62.506	242.655	39	768	183.391	58.457	231.842	39	777	186.911	44.115	237.032	28	786	183.174	53.044	248.087	7°	42	822	190.358	56.865	
-Rio Grande do Norte	87.867	118	-	64.286	23.463	87.381	111	-	66.069	21.201	80.260	104	-	62.265	17.891	82.093	110	-	61.702	20.281	86.503	18°	105	-	64.514	21.884	
-Paraíba	99.803	104	213	67.055	32.431	96.280	118	188	68.565	27.409	92.159	111	173	70.239	21.636	96.475	76	184	68.055	28.160	103.443	16°	107	172	72.781	30.383	
-Pernambuco	233.659	-	1.783	146.445	85.431	226.569	-	1.740	148.614	76.215	203.874	-	1.741	144.603	57.530	215.238	-	1.813	145.346	68.079	233.012	9°	-	2.020	153.916	77.076	
-Alagoas	81.899	-	374	61.746	19.779	77.705	-	305	61.011	16.389	74.470	-	301	60.932	13.237	78.646	-	331	62.207	16.108	84.669	19°	-	344	67.301	17.024	
-Sergipe	57.928	-	-	39.399	18.529	55.601	-	-	38.927	16.674	50.649	-	-	38.596	12.053	55.464	-	-	39.065	16.399	58.803	22°	-	-	41.077	17.726	
-Bahia	353.460	-	803	260.644	92.013	347.860	-	769	263.535	83.556	326.707	-	853	276.119	49.735	351.126	-	546	269.851	80.729	362.495	4°	-	642	274.538	87.315	
-Região Sudeste	2.100.695	872	1.619	1.598.030	500.174	2.079.563	849	973	1.607.178	470.563	1.958.899	805	1.013	1.580.411	376.670	2.022.309	869	974	1.578.080	442.386	2.101.212	1°	930	1.014	1.615.983	483.285	
-Minas Gerais	472.408	195	531	366.676	105.006	464.390	198	428	365.838	97.926	445.727	259	529	374.754	70.185	470.802	261	465	379.749	90.327	498.721	2°	257	483	398.344	99.637	
-Espírito Santo	106.225	78	-	95.493	10.654	106.512	78	-	96.216	10.218	99.793	48	-	91.068	8.677	102.682	55	-	92.855	9.772	108.351	15°	72	-	97.534	10.745	
-Rio de Janeiro	380.198	336	223	238.837	140.802	374.269	370	190	243.035	130.674	343.758	269	186	242.890	100.413	359.987	342	217	241.436	117.992	370.857	3°	360	178	247.273	123.046	
-São Paulo	1.141.864	263	865	897.024	243.712	1.134.392	203	355	902.089	231.745	1.069.621	229	298	871.699	197.395	1.088.838	211	292	864.040	224.295	1.123.283	1°	241	353	872.832	249.857	
-Região Sul	720.860	263	2.817	557.674	160.106	723.963	166	2.357	569.402	152.038	708.102	138	2.165	568.615	137.184	737.382	205	2.087	580.244	154.846	763.785	3°	200	1.953	598.993	162.639	
-Paraná	274.477	69	870	218.323	55.215	276.344	-	909	225.060	50.375	276.973	-	927	232.703	43.343	289.331	-	824	237.545	50.962	300.866	5°	-	802	246.116	53.948	
-Santa Catarina	191.697	142	48	159.238	32.269	194.149	127	55	162.123	31.844	192.689	100	56	160.923	31.610	202.296	140	60	166.262	35.834	210.123	11°	148	60	171.854	38.061	
-Rio Grande do Sul	254.686	52	1.899	180.113	72.622	253.470	39	1.393	182.219	69.819	238.440	38	1.182	174.989	62.231	245.755	65	1.203	176.437	68.050	252.796	6°	52	1.091	181.023	70.630	
-Região Centro-Oeste	410.463	41	46.031	271.797	92.594	418.693	43	47.567	284.893	86.190	388.642	40	45.106	270.760	72.736	411.698	42	45.902	279.354	86.400	440.104	5°	48	48.138	298.206	93.712	
-Mato Grosso do Sul	73.334	-	148	61.187	11.999	75.425	-	138	64.023	11.264	70.874	-	92	60.513	10.269	75.679	-	109	63.428	12.142	80.845	20°	-	126	66.948	13.771	
-Mato Grosso	104.312	-	309	89.812	14.191	105.712	-	339	92.875	12.498	97.957	-	248	87.077	10.632	103.605	-	24	91.104	12.477	113.081	14°	-	21	98.863	14.197	
-Goiás	161.072	41	-	120.798	40.233	165.556	43	19	127.995	37.499	152.942	40	-	123.170	29.732	163.415	42	-	124.822	38.551	174.916	12°	48	-	132.395	42.473	
-Distrito Federal	71.745	-	45.574	-	26.171	72.000	-	47.071	-	24.929	66.869	-	44.766	-	22.103	68.999	-	45.769	-	23.230	71.262	21°	-	47.991	-	23.271	
+
+############   INSERIR CONJUNTO DE DADOS AQUI ###########
 
 }
 
+Feito isso, plote os resultados e siga para a parte 2
 
+##### Parte 2
+Agora agrupe cada vetor apresentado acima, por categoria, como por exemplo: 
+
+# Total por ano
+total_2019 <- c(...)
+total_2020 <- c(...)
+total_2021 <- c(...)
+total_2022 <- c...)
+total_2023 <- c(...)
+
+E assim por diante, fazendo o mesmo para as demais categorias, Federal, Estadual, Municipal, Privada e Ranking 2023.
+
+Importante: 
+Substitua os (...) pelos dados de cada vetor e em hipótese nenhuma modifique os dados dos vetores, traga-os com todos os valores apresentados no resultado, incluindo o "-" onde houver. 
+No ranking 2023 deixe apenas os números, mantendo apenas o "-", quando houver.
+
+Feito isso, plote os resultados e siga para a parte 3
+
+#Comando 3
+Agora altere o nome do vetor para armazenar:
+o Total em d1$ colocando os anos entre``.
+Para Federal, armazene em d2$`ano`.
+Estadual em d3$`ano`
+Municipal em d$4`ano`
+Privada em d5$"ano"
+Ranking 2023 em d6$`2023`
+
+Importante: Incluia todo o conjunto de dados de cada vetor correspondente, sem pular e alterar quaisquer dados.
